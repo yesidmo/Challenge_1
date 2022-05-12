@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es" id="htmlY" >
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador</title>
+    <link  rel="stylesheet" href="style.css"> 
+    <link  rel="stylesheet" href="reset.css">
+</head>
+
+<body>
+
+<header>
+    <img src="./image/y.png" class="logo-Y">
+</header>
+<main>
+    <section>
+        <p id="encabezado">Este encriptador usa otro método de encriptación, donde todas las letras cambian.
+            Se admiten todo tipo de caracteres</p>
+        <textarea  type="text" class="input-text" placeholder="Ingresa tu texto"></textarea>
+        <div>
+            <button type="button" id="boton-encriptar-y" onclick= "btnEncriptarY()">Encriptar</button>
+            <button type="button"id="boton-desencriptar-y" onclick= "btnDesencriptarY()" >Desencriptar</button>
+            <button type="button"id="boton-copiar">Copiar</button>
+            <button type="button" id="cambioEncriptador"><a id="bntCambio" href="index.html">Cambiar  de Encriptador</a></button>
+        </div>
+    </section> 
+    <section >
+        <textarea  type="text" class="output-text" ></textarea>
+        <span class="texto-copiado-aviso-invisible">Texto copiado</span>
+        <span class="texto-no-encontrado-visible">Ningún mensaje fue encontrado</span>
+        <img src="./image/output.jpg" id="logo-output">
+    </section>
+
+</main>
+<footer > 
+    <ul id="pie-pagina">
+        <li > Challenge #1. Alura Latam - ONE Oracle Next Education</li>
+        <li >&copy Yesid Muñoz Ome. 2022</li>
+    </ul>
+</footer>
+<script src="js.js"></script>
+<script src="boton-copiar.js"></script>
+<script src="encriptar.js"></script>
+</body>
+
+</html>
